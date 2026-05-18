@@ -1,8 +1,6 @@
 # 577 Industries
 
-Dual-use space-weather + GNSS decision intelligence. NASA SBIR, DARPA, and FORGE OS platform engineering.
-
-577 Industries Inc., Columbus OH. Founded by [Thomas Waweru](https://github.com/577-Industries).
+Dual-use commercial and defense AI systems engineering. 577 Industries Incorporated. Columbus, Ohio.
 
 ---
 
