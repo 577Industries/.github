@@ -93,24 +93,7 @@ Reusable TypeScript libraries for AI-agent applications. Each library implements
 
 ---
 
-## Internal
-
-| Repo | Visibility | Purpose |
-|---|---|---|
-| [`577i-unified`](https://github.com/577Industries/577i-unified) | private | FORGE OS platform monorepo (development workspace) |
-| [`helios-fusion-internal`](https://github.com/577Industries/helios-fusion-internal) | private | HELIOS trained weights, BMA priors, equipment transfer functions (IP-gated) |
-
----
-
-## Engagement
-
-577 Industries is a small, founder-led shop. Public artifact issues and pull requests are welcome on the relevant repo. For the conversations a GitHub issue can't handle:
-
-- **Engineering, integrations, citation requests** — <engineering@577industries.com>
-- **SBIR / contract partnership inquiries** — <engineering@577industries.com>
-- **Principal Investigator** — Thomas Waweru — <gitongaw@gmail.com>
-
-Patent-disclosure and SBIR data-rights inquiries: route through `engineering@`.
+<INFO@577INDUSTRIES.COM>
 
 ---
 
