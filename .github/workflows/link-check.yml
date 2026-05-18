@@ -1,0 +1,17 @@
+name: link-check
+on:
+  push:
+    paths: ['profile/**']
+  pull_request:
+    paths: ['profile/**']
+  schedule:
+    - cron: '0 9 * * 1'  # weekly Monday 09:00 UTC
+jobs:
+  lychee:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: lycheeverse/lychee-action@v1
+        with:
+          args: --verbose --no-progress profile/README.md
+          fail: true
