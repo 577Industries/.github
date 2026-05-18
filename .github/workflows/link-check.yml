@@ -1,11 +1,12 @@
 name: link-check
 on:
   push:
-    paths: ['profile/**']
+    paths: ['profile/**', '.lycheeignore', '.github/workflows/link-check.yml']
   pull_request:
-    paths: ['profile/**']
+    paths: ['profile/**', '.lycheeignore', '.github/workflows/link-check.yml']
   schedule:
     - cron: '0 9 * * 1'  # weekly Monday 09:00 UTC
+  workflow_dispatch:
 jobs:
   lychee:
     runs-on: ubuntu-latest
