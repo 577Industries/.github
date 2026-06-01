@@ -64,6 +64,8 @@ Behavioral-equivalence-verified AI modernization of legacy C#/.NET mission-plann
 
 Consumes [`forge-model-router`](https://github.com/577Industries/forge-model-router) for air-gappable, sovereign-profile model routing.
 
+**Companion site →** [577industries.github.io/forge-evolve-tmpc](https://577industries.github.io/forge-evolve-tmpc/)
+
 ---
 
 ## DARPA ASEMA — Secure Messaging Assessment (AEGIS)
