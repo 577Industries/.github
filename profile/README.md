@@ -8,6 +8,7 @@ Columbus, Ohio · Dual-use commercial & defense
 
 [![License: Apache 2.0](https://img.shields.io/badge/license-Apache_2.0-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
 [![NASA SBIR](https://img.shields.io/badge/NASA_SBIR-under_evaluation-0b3d91)](#helios--calibrated-heliophysics-fusion)
+[![Navy SBIR](https://img.shields.io/badge/Navy_SBIR-DON26BZ01--NV013-1c3d6e)](#forge-evolve-for-tmpc--ai-assisted-modernization-of-mission-planning-software)
 [![DARPA](https://img.shields.io/badge/DARPA_ASEMA-under_evaluation-555)](#darpa-asema--secure-messaging-assessment-aegis)
 [![Patents](https://img.shields.io/badge/patents-5_described-7c3aed)](#forge-os--agent-infrastructure)
 [![npm](https://img.shields.io/badge/npm-@577--industries-cb3837)](https://www.npmjs.com/search?q=%40577-industries)
@@ -45,6 +46,23 @@ Multi-source space-weather fusion with feature-level provenance and calibrated u
 | [`gannon-storm-rtk-analysis`](https://github.com/577Industries/gannon-storm-rtk-analysis) | May 2024 Gannon G5 retrospective on the NGS CORS network |
 
 **Companion site →** [577industries.github.io/helios-program](https://577industries.github.io/helios-program/)
+
+---
+
+## FORGE EVOLVE for TMPC — AI-assisted modernization of mission-planning software
+
+![status](https://img.shields.io/badge/Navy_SBIR_Phase_I-DON26BZ01--NV013-1c3d6e) [![demo-offline](https://github.com/577Industries/forge-evolve-tmpc/actions/workflows/demo-offline.yml/badge.svg)](https://github.com/577Industries/forge-evolve-tmpc/actions/workflows/demo-offline.yml)
+
+Behavioral-equivalence-verified AI modernization of legacy C#/.NET mission-planning software, with continuous-ATO evidence generated as a byproduct. Targets the U.S. Navy Theater Mission Planning Center (TMPC, NAVAIR PMA-281), topic **DON26BZ01-NV013** (26.B Release 1); response in preparation. This is the C#/.NET extension of 577's FORGE EVOLVE modernization framework, reproducible offline by reviewers with no API keys.
+
+> [!NOTE]
+> **Headline result.** On a synthetic, unclassified MDS-like surrogate, a modernized .NET 8 component reproduces its legacy counterpart on **2000/2000 corpus vectors with zero violations** (95% rule-of-three upper bound ≈1.5×10⁻³ on the per-vector deviation rate). The validation oracle separately flags **321 latent legacy defects** as engineering-change findings, and STIG, NIST 800-53, CycloneDX SBOM, and a tamper-evident provenance hashchain are emitted automatically. Preliminary; **not government-validated**.
+
+| Repository | Purpose |
+|---|---|
+| [`forge-evolve-tmpc`](https://github.com/577Industries/forge-evolve-tmpc) | Runnable C#/.NET reference implementation · Discovery (Roslyn) → CLAR → migration planning → multi-agent transform → behavioral-equivalence validation → cATO artifacts, on a synthetic MDS-like surrogate · `make demo` runs offline and byte-deterministic · 137 tests · CI green on Linux + Windows · Apache-2.0 |
+
+Consumes [`forge-model-router`](https://github.com/577Industries/forge-model-router) for air-gappable, sovereign-profile model routing.
 
 ---
 
@@ -86,6 +104,7 @@ Reusable TypeScript libraries for production AI-agent applications. Each library
 
 | Date | Update |
 |---|---|
+| **2026-06-01** | FORGE EVOLVE for TMPC reference implementation published · Navy SBIR DON26BZ01-NV013 · `make demo` reproducible offline · CI green on Linux + Windows |
 | **2026-05-18** | HELIOS NASA SBIR Phase I proposal submitted · now under NASA evaluation · Phase II evidence in assembly |
 | **2026-03** | `forge-workflow-dag` and `forge-hashchain-audit` patents described |
 | **2026-02** | `forge-model-router` patent described |
