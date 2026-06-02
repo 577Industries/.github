@@ -2,7 +2,7 @@
 
 # 577 Industries
 
-### Engineering for missions where being wrong is expensive.
+### Engineering for missions where being faliure is not an option.
 
 Columbus, Ohio · Dual-use commercial & defense
 
