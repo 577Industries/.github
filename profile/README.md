@@ -1,17 +1,18 @@
 <div align="center">
 
-# 577 Industries
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/577Industries/.github/main/profile/assets/banner-dark.png">
+  <img alt="577 Industries — Engineering for missions where failure is not an option." src="https://raw.githubusercontent.com/577Industries/.github/main/profile/assets/banner-light.png" width="830">
+</picture>
 
-### Engineering for missions where failure is not an option.
+<br><br>
+
+[![Website](https://img.shields.io/badge/577industries.com-visit-5eb5ff?style=flat-square)](https://577industries.com)
+[![License: Apache 2.0](https://img.shields.io/badge/license-Apache_2.0-blue?style=flat-square)](https://www.apache.org/licenses/LICENSE-2.0)
+[![Patents](https://img.shields.io/badge/patents-5_described-7c3aed?style=flat-square)](#forge-os--agent-infrastructure)
+[![npm](https://img.shields.io/badge/npm-@577--industries-cb3837?style=flat-square)](https://www.npmjs.com/search?q=%40577-industries)
 
 Columbus, Ohio · Dual-use commercial & defense
-
-[![License: Apache 2.0](https://img.shields.io/badge/license-Apache_2.0-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
-[![NASA SBIR](https://img.shields.io/badge/NASA_SBIR-under_evaluation-0b3d91)](#helios--calibrated-heliophysics-fusion)
-[![Navy SBIR](https://img.shields.io/badge/Navy_SBIR-DON26BZ01--NV013-1c3d6e)](#forge-evolve-for-tmpc--ai-assisted-modernization-of-mission-planning-software)
-[![DARPA](https://img.shields.io/badge/DARPA_ASEMA-under_evaluation-555)](#darpa-asema--secure-messaging-assessment-aegis)
-[![Patents](https://img.shields.io/badge/patents-5_described-7c3aed)](#forge-os--agent-infrastructure)
-[![npm](https://img.shields.io/badge/npm-@577--industries-cb3837)](https://www.npmjs.com/search?q=%40577-industries)
 
 </div>
 
@@ -26,11 +27,26 @@ Columbus, Ohio · Dual-use commercial & defense
 
 Every public artifact ships with a license, a CI badge, and citable evidence. Every internal artifact is gated by a documented IP boundary. Programs land in this org iteratively as they ship; the active set is below.
 
+```mermaid
+%%{init: {'theme':'neutral'}}%%
+flowchart LR
+    ORG(["577 Industries"]):::org
+    ORG --- HELIOS["☀ HELIOS<br/>calibrated space-weather fusion"]
+    ORG --- EVOLVE["⚙ FORGE EVOLVE<br/>verified legacy modernization"]
+    ORG --- AEGIS["🛡 AEGIS<br/>secure-messaging assessment"]
+    ORG --- FOS["⛭ FORGE OS<br/>agent infrastructure libraries"]
+    HELIOS --- hp["helios-program<br/>+ 4 artifact repos"]
+    EVOLVE --- fe["forge-evolve-tmpc"]
+    AEGIS --- ag["aegisgraph · asema-feasibility-artifacts"]
+    FOS --- fl["forge-agent-memory · model-router<br/>tool-guardrails · workflow-dag · hashchain-audit"]
+    classDef org font-weight:bold
+```
+
 ---
 
 ## HELIOS — Calibrated Heliophysics Fusion
 
-![status](https://img.shields.io/badge/NASA_SBIR_Phase_I-under_evaluation-0b3d91) ![phase-ii](https://img.shields.io/badge/Phase_II-evidence_in_assembly-009688)
+![status](https://img.shields.io/badge/NASA_SBIR_Phase_I-under_evaluation-0b3d91?style=flat-square) ![phase-ii](https://img.shields.io/badge/Phase_II-evidence_in_assembly-009688?style=flat-square)
 
 Multi-source space-weather fusion with feature-level provenance and calibrated uncertainty. Two vertical slices: NASA SRAG mission-operations radiation risk and U.S. precision-agriculture GNSS reliability. NASA SBIR subtopic **SPWX.1.S26A**, submitted 2026-05-18, currently under NASA evaluation.
 
@@ -51,7 +67,7 @@ Multi-source space-weather fusion with feature-level provenance and calibrated u
 
 ## FORGE EVOLVE for TMPC — AI-assisted modernization of mission-planning software
 
-![status](https://img.shields.io/badge/Navy_SBIR_Phase_I-DON26BZ01--NV013-1c3d6e) [![demo-offline](https://github.com/577Industries/forge-evolve-tmpc/actions/workflows/demo-offline.yml/badge.svg)](https://github.com/577Industries/forge-evolve-tmpc/actions/workflows/demo-offline.yml)
+![status](https://img.shields.io/badge/Navy_SBIR_Phase_I-DON26BZ01--NV013-1c3d6e?style=flat-square) [![demo-offline](https://img.shields.io/github/actions/workflow/status/577Industries/forge-evolve-tmpc/demo-offline.yml?style=flat-square&label=demo-offline)](https://github.com/577Industries/forge-evolve-tmpc/actions/workflows/demo-offline.yml)
 
 Behavioral-equivalence-verified AI modernization of legacy C#/.NET mission-planning software, with continuous-ATO evidence generated as a byproduct. Targets the U.S. Navy Theater Mission Planning Center (TMPC, NAVAIR PMA-281), topic **DON26BZ01-NV013** (26.B Release 1); response in preparation. This is the C#/.NET extension of 577's FORGE EVOLVE modernization framework, reproducible offline by reviewers with no API keys.
 
@@ -70,23 +86,23 @@ Consumes [`forge-model-router`](https://github.com/577Industries/forge-model-rou
 
 ## DARPA ASEMA — Secure Messaging Assessment (AEGIS)
 
-![contract](https://img.shields.io/badge/contract-HR0011SB20254--12-grey) ![status](https://img.shields.io/badge/Tier_3-under_evaluation-555)
+![contract](https://img.shields.io/badge/contract-HR0011SB20254--12-grey?style=flat-square) ![status](https://img.shields.io/badge/Tier_3-under_evaluation-555?style=flat-square)
 
 Graph-based application-layer evidence platform for assessing Secure Messaging Applications (project codename **AEGIS**). DARPA contract HR0011SB20254-12, Tier 3 research, currently under active DARPA evaluation.
 
 > [!IMPORTANT]
-> Program materials and evaluation evidence are intentionally limited during the evaluation window. Additional artifacts will consolidate into the `577Industries` org post-evaluation.
+> Program materials and evaluation evidence are intentionally limited during the evaluation window. `aegisgraph`'s name, URL, and description are frozen until the evaluation closes.
 
 | Repository | Status |
 |---|---|
 | [`aegisgraph`](https://github.com/577Industries/aegisgraph) | Feasibility artifact · URL frozen during evaluation |
-| [`577-Industries/asema-feasibility-artifacts`](https://github.com/577-Industries/asema-feasibility-artifacts) | Founder-account feasibility artifacts · transitional |
+| [`asema-feasibility-artifacts`](https://github.com/577Industries/asema-feasibility-artifacts) | Sanitized reproducibility artifacts · consolidated into the org 2026-07 with permanent redirects from the founder-account URLs |
 
 ---
 
 ## FORGE OS — Agent Infrastructure
 
-![license](https://img.shields.io/badge/license-Apache_2.0-blue) ![patents](https://img.shields.io/badge/patents-5_described-7c3aed) ![npm](https://img.shields.io/badge/npm-@577--industries-cb3837)
+![license](https://img.shields.io/badge/license-Apache_2.0-blue?style=flat-square) ![patents](https://img.shields.io/badge/patents-5_described-7c3aed?style=flat-square) ![npm](https://img.shields.io/badge/npm-@577--industries-cb3837?style=flat-square)
 
 Reusable TypeScript libraries for production AI-agent applications. Each library implements an algorithm described in a 2025–2026 patent filing.
 
@@ -106,6 +122,7 @@ Reusable TypeScript libraries for production AI-agent applications. Each library
 
 | Date | Update |
 |---|---|
+| **2026-07-07** | GitHub presence consolidated: ASEMA artifacts transferred into the org (redirects preserved), org-wide brand system + repo standards shipped, `v1.0.0` releases tagged across the FORGE OS libraries |
 | **2026-06-01** | FORGE EVOLVE for TMPC reference implementation published · Navy SBIR DON26BZ01-NV013 · `make demo` reproducible offline · CI green on Linux + Windows |
 | **2026-05-18** | HELIOS NASA SBIR Phase I proposal submitted · now under NASA evaluation · Phase II evidence in assembly |
 | **2026-03** | `forge-workflow-dag` and `forge-hashchain-audit` patents described |
@@ -116,7 +133,7 @@ Reusable TypeScript libraries for production AI-agent applications. Each library
 
 <div align="center">
 
-**Contact** · [info@577industries.com](mailto:info@577industries.com)
+**Contact** · [info@577industries.com](mailto:info@577industries.com) · [Security policy](https://github.com/577Industries/.github/blob/main/SECURITY.md) · [Contributing](https://github.com/577Industries/.github/blob/main/CONTRIBUTING.md) · [Repo standards](https://github.com/577Industries/.github/blob/main/docs/repo-standards.md)
 
 <sub>© 2025–2026 577 Industries Incorporated · Columbus, Ohio · Apache 2.0 except where noted</sub>
 
