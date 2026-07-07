@@ -224,7 +224,7 @@ function bannerNode(theme) {
             marginLeft: 30,
           }),
         ]),
-        text("Engineering for missions where being wrong is expensive.", {
+        text("Engineering for missions where failure is not an option.", {
           fontFamily: "Inter Tight",
           fontWeight: 500,
           fontSize: 34,
