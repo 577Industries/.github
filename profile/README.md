@@ -35,10 +35,14 @@ flowchart LR
     ORG --- EVOLVE["⚙ FORGE EVOLVE<br/>verified legacy modernization"]
     ORG --- AEGIS["🛡 AEGIS<br/>secure-messaging assessment"]
     ORG --- FOS["⛭ FORGE OS<br/>agent infrastructure libraries"]
+    ORG --- FI["🌐 FORGE INTELLIGENCE<br/>OSINT fusion console"]
+    ORG --- QS["⚛ QSPARX<br/>post-quantum migration planning"]
     HELIOS --- hp["helios-program<br/>+ 4 artifact repos"]
     EVOLVE --- fe["forge-evolve-tmpc"]
     AEGIS --- ag["aegisgraph · asema-feasibility-artifacts"]
-    FOS --- fl["forge-agent-memory · model-router<br/>tool-guardrails · workflow-dag · hashchain-audit"]
+    FOS --- fl["forge-os-libs<br/>5 packages, one repo"]
+    FI --- fi["forge-intelligence"]
+    QS --- qs["forge-qbit-qsparx"]
     classDef org font-weight:bold
 ```
 
@@ -78,7 +82,7 @@ Behavioral-equivalence-verified AI modernization of legacy C#/.NET mission-plann
 |---|---|
 | [`forge-evolve-tmpc`](https://github.com/577Industries/forge-evolve-tmpc) | Runnable C#/.NET reference implementation · Discovery (Roslyn) → CLAR → migration planning → multi-agent transform → behavioral-equivalence validation → cATO artifacts, on a synthetic MDS-like surrogate · `make demo` runs offline and byte-deterministic · 137 tests · CI green on Linux + Windows · Apache-2.0 |
 
-Consumes [`forge-model-router`](https://github.com/577Industries/forge-model-router) for air-gappable, sovereign-profile model routing.
+Consumes [`@577-industries/model-router`](https://github.com/577Industries/forge-os-libs/tree/main/packages/model-router) for air-gappable, sovereign-profile model routing.
 
 **Companion site →** [577industries.github.io/forge-evolve-tmpc](https://577industries.github.io/forge-evolve-tmpc/)
 
@@ -91,12 +95,12 @@ Consumes [`forge-model-router`](https://github.com/577Industries/forge-model-rou
 Graph-based application-layer evidence platform for assessing Secure Messaging Applications (project codename **AEGIS**). DARPA contract HR0011SB20254-12, Tier 3 research, currently under active DARPA evaluation.
 
 > [!IMPORTANT]
-> Program materials and evaluation evidence are intentionally limited during the evaluation window. `aegisgraph`'s name, URL, and description are frozen until the evaluation closes.
+> Program materials and evaluation evidence remain intentionally limited. Published artifacts are the sanitized reproducibility set only.
 
 | Repository | Status |
 |---|---|
-| [`aegisgraph`](https://github.com/577Industries/aegisgraph) | Feasibility artifact · URL frozen during evaluation |
-| [`asema-feasibility-artifacts`](https://github.com/577Industries/asema-feasibility-artifacts) | Sanitized reproducibility artifacts · consolidated into the org 2026-07 with permanent redirects from the founder-account URLs |
+| [`aegisgraph`](https://github.com/577Industries/aegisgraph) | Feasibility artifact · sanitize-check gates every public export |
+| [`asema-feasibility-artifacts`](https://github.com/577Industries/asema-feasibility-artifacts) | Sanitized reproducibility artifacts · consolidated into the org 2026-07. GitHub redirects the repository URL from the former founder-account path; GitHub Pages URLs are not redirected on transfer, so the documents are served at [577industries.github.io/asema-feasibility-artifacts](https://577industries.github.io/asema-feasibility-artifacts/) |
 
 ---
 
@@ -104,17 +108,47 @@ Graph-based application-layer evidence platform for assessing Secure Messaging A
 
 ![license](https://img.shields.io/badge/license-Apache_2.0-blue?style=flat-square) ![patents](https://img.shields.io/badge/patents-5_described-7c3aed?style=flat-square) ![npm](https://img.shields.io/badge/npm-@577--industries-cb3837?style=flat-square)
 
-Reusable TypeScript libraries for production AI-agent applications. Each library implements an algorithm described in a 2025–2026 patent filing.
+Reusable TypeScript libraries for production AI-agent applications. Each library implements an algorithm described in a 2025–2026 patent filing. All five live in [`forge-os-libs`](https://github.com/577Industries/forge-os-libs) and publish independently to npm.
 
-| Library | What it does | Patent (described) |
+| Package | What it does | Patent (described) |
 |---|---|---|
-| [`forge-agent-memory`](https://github.com/577Industries/forge-agent-memory) | Persistent memory · log-reinforcement, exponential decay, composite recall | Autonomous Memory Evolution · Dec 2025 |
-| [`forge-model-router`](https://github.com/577Industries/forge-model-router) | Multi-provider routing · 6 strategies, sovereign profiles, cost ceiling | Adaptive Model Routing · Feb 2026 |
-| [`forge-tool-guardrails`](https://github.com/577Industries/forge-tool-guardrails) | 4-level tool middleware (none/log/pause/block) + HITL approval | Governed Autonomy Framework · Jan 2026 |
-| [`forge-workflow-dag`](https://github.com/577Industries/forge-workflow-dag) | YAML → DAG compiler · Kahn topological sort, cycle detection | Workflow DAG Compiler · Mar 2026 |
-| [`forge-hashchain-audit`](https://github.com/577Industries/forge-hashchain-audit) | Tamper-evident audit · SHA-256 chaining + Ed25519 + Merkle anchoring | Hash-Chained Audit Ledger · Mar 2026 |
+| [`agent-memory`](https://github.com/577Industries/forge-os-libs/tree/main/packages/agent-memory) | Persistent memory · log-reinforcement, exponential decay, composite recall | Autonomous Memory Evolution · Dec 2025 |
+| [`model-router`](https://github.com/577Industries/forge-os-libs/tree/main/packages/model-router) | Multi-provider routing · 6 strategies, sovereign profiles, cost ceiling | Adaptive Model Routing · Feb 2026 |
+| [`tool-guardrails`](https://github.com/577Industries/forge-os-libs/tree/main/packages/tool-guardrails) | 4-level tool middleware (none/log/pause/block) + HITL approval | Governed Autonomy Framework · Jan 2026 |
+| [`workflow-dag`](https://github.com/577Industries/forge-os-libs/tree/main/packages/workflow-dag) | YAML → DAG compiler · Kahn topological sort, cycle detection | Workflow DAG Compiler · Mar 2026 |
+| [`hashchain-audit`](https://github.com/577Industries/forge-os-libs/tree/main/packages/hashchain-audit) | Tamper-evident audit · SHA-256 chaining + Ed25519 + Merkle anchoring | Hash-Chained Audit Ledger · Mar 2026 |
 
-<sub>Packages currently publish under `@577-industries/*` on npm. A rebrand to `@577industries/forge-*` is on the 2026 roadmap.</sub>
+<sub>Consolidated into one repository 2026-08-09; the five original repos are archived and read-only, with their releases and history preserved. Package names and versions are unchanged — `npm i @577-industries/model-router` works exactly as before. A rebrand to `@577industries/forge-*` is on the 2026 roadmap.</sub>
+
+---
+
+## FORGE INTELLIGENCE — OSINT Fusion Console
+
+![license](https://img.shields.io/badge/license-Apache_2.0-blue?style=flat-square) ![upstream](https://img.shields.io/badge/upstream-hardened_fork_of_Osiris-6e7681?style=flat-square)
+
+Real-time open-source-intelligence fusion: a WebGL globe over public-domain intelligence feeds, with a passive-first reconnaissance toolkit. A hardened fork of the MIT-licensed [Osiris](https://github.com/simplifaisoul/osiris), with the security work carried in-tree.
+
+> [!NOTE]
+> **Design rule.** An unavailable source reports unavailable — feeds never fabricate a data point, and routes fail closed. Non-commercial-only feeds are disqualified regardless of data quality.
+
+| Repository | Purpose |
+|---|---|
+| [`forge-intelligence`](https://github.com/577Industries/forge-intelligence) | Fusion console · layer catalog, SSRF-guarded egress, tiered reconnaissance access |
+
+---
+
+## QSPARX — Post-Quantum Migration Planning
+
+![license](https://img.shields.io/badge/license-Apache_2.0-blue?style=flat-square) ![sbom](https://img.shields.io/badge/SBOM-CycloneDX-262d3a?style=flat-square)
+
+Evidence-first synthetic cryptographic mission twin for planning post-quantum migration: cryptographic inventory, CycloneDX SBOM generation, and a digital twin of the migration surface.
+
+> [!NOTE]
+> **Waiver discipline.** Container vulnerability waivers are exact, versioned, and expiry-dated. Any change to the runtime dependency scope invalidates them and forces reassessment before CI can pass — the control is enforced in `scripts/check_container_waivers.py`, not by convention.
+
+| Repository | Purpose |
+|---|---|
+| [`forge-qbit-qsparx`](https://github.com/577Industries/forge-qbit-qsparx) | Cryptographic inventory + mission twin · signed releases, reviewer Pages site |
 
 ---
 
@@ -122,6 +156,7 @@ Reusable TypeScript libraries for production AI-agent applications. Each library
 
 | Date | Update |
 |---|---|
+| **2026-08-09** | FORGE OS libraries consolidated into [`forge-os-libs`](https://github.com/577Industries/forge-os-libs) (npm packages unchanged); FORGE INTELLIGENCE and QSPARX added as programs; reproducibility fixes across the HELIOS toolchain |
 | **2026-07-07** | GitHub presence consolidated: ASEMA artifacts transferred into the org (redirects preserved), org-wide brand system + repo standards shipped, `v1.0.0` releases tagged across the FORGE OS libraries |
 | **2026-06-01** | FORGE EVOLVE for TMPC reference implementation published · Navy SBIR DON26BZ01-NV013 · `make demo` reproducible offline · CI green on Linux + Windows |
 | **2026-05-18** | HELIOS NASA SBIR Phase I proposal submitted · now under NASA evaluation · Phase II evidence in assembly |
