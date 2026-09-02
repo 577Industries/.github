@@ -7,12 +7,19 @@ on:
   schedule:
     - cron: '0 9 * * 1'  # weekly Monday 09:00 UTC
   workflow_dispatch:
+
+# Cancel superseded pull-request runs only; push and schedule runs always finish.
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
 jobs:
   lychee:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
-      - uses: actions/checkout@v4
-      - uses: lycheeverse/lychee-action@v1
+      - uses: actions/checkout@v7
+      - uses: lycheeverse/lychee-action@v2.9.0
         with:
           args: --verbose --no-progress profile/README.md
           fail: true
